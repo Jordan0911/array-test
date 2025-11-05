@@ -71,7 +71,9 @@
             Console.WriteLine("there are "+odd_counter  +" odd numbers and " +even_counter+" even numbers");
             //fifth exercise
             average = sum / n;
-            Console.WriteLine("the minimum is " + min + " the maximum is "+max+" and the average is " + average);  
+            Console.WriteLine("the minimum is " + min + " the maximum is "+max+" and the average is " + average);
+            // sixth exercise
+            for 
         }
     }
 
