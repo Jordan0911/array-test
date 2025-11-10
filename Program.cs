@@ -124,6 +124,7 @@
                     s2++;
                 }
             }
+            //seventh,eighth,ninth,and tenth exercise
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i]<=b && numbers[i]>=a)
