@@ -2,6 +2,94 @@
 {
     internal class Program
     {
+        //eleventh exercise
+        static int CountElements(int [] Array,int x )
+        {
+            int count = 0;
+            for (int i = 0; i < Array.Length; i++)
+            {
+                if (Array[i] == x)
+                {
+                    count++;
+                  
+                }
+            }
+            return count ;
+        }
+        //twelfth exercise
+        static bool InsideCheker(int[] Array, int x)
+        {
+            for (int t = 0; t < Array.Length; t++)
+            {
+                if (Array[t] == x)
+                {
+                    return true;
+
+                }
+            }
+            return false;
+        }
+        //thirteenth exercise 
+        static int  X_finder(int[] Array, int x)
+        {
+            for (int t = 0; t < Array.Length; t++)
+            {
+                if (Array[t] == x)
+                {
+                    return t;
+                }
+            }
+            return -1;
+        }
+        static int[] Array_duplicator(int[] source_array)
+        {
+         int[] host_array= new int[source_array.Length];
+
+            for (int i = 0;i < source_array.Length; i++)
+            {
+                host_array[i] = source_array[i];
+            }
+            return host_array; 
+
+
+
+
+
+
+
+          
+        }
+        static int[] Inverted_array_duplicator(int[] source_array)
+        {
+            int[] host_array = new int[source_array.Length];
+
+            for (int i = source_array.Length; i >=0; i--)
+            {
+                host_array[i] = source_array[i];
+            }
+            return host_array;
+
+
+
+
+
+
+
+
+        }
+        static string Array_writer(int[] Array)
+        {
+
+            return Console.WriteLine(Array);
+        }
+        static bool Equal_checker(int[] a, int[] b)
+        {
+            if (a == b)
+            {
+                return true; 
+            }
+            return false;
+        }
         static void Main(string[] args)
         {
 
@@ -62,7 +150,7 @@
                 }
             }
             // first exercise
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = numbers.Length; i >= 0; i--)
             {
                 Console.WriteLine($"[ {numbers[i]} ]");
             }
@@ -140,12 +228,13 @@
             {
                 if (numbers[i] <= d && numbers[i] >= c)
                 {
-                    inside_ab_counter++;
+                    inside_cd_counter++;
                 }
                 else if (numbers[i] < c || numbers[i] > d)
                 {
-                    outside_ab_counter++;
+                    outside_cd_counter++;
                 }
+               
             }
             Console.WriteLine("numbers smaller than or equal to x are: ");
             for (int i = 0; i < smaller_than_x.Length; i++)
