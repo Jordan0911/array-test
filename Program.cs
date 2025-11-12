@@ -41,6 +41,7 @@
             }
             return -1;
         }
+        //fourteenth exercise
         static int[] Array_duplicator(int[] source_array)
         {
          int[] host_array= new int[source_array.Length];
@@ -59,6 +60,7 @@
 
           
         }
+        //fifteenth exercise
         static int[] Inverted_array_duplicator(int[] source_array)
         {
             int[] host_array = new int[source_array.Length];
@@ -77,11 +79,6 @@
 
 
         }
-        static string Array_writer(int[] Array)
-        {
-
-            return Console.WriteLine(Array);
-        }
         static bool Equal_checker(int[] a, int[] b)
         {
             if (a == b)
@@ -89,6 +86,10 @@
                 return true; 
             }
             return false;
+        }
+        static int[] Array_writer(int[] Array)
+        {
+           return Array;
         }
         static void Main(string[] args)
         {
