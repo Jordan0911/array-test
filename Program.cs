@@ -89,7 +89,9 @@
         }
         static int[] Array_writer(int[] Array)
         {
+
            return Array;
+
         }
         static void Main(string[] args)
         {
